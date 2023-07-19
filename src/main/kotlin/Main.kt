@@ -96,17 +96,20 @@ fun main(){
     println("Enter a number")
     val userNumber = readLine()
     if(userNumber != null)
+        
         println(userNumber.toInt()-5)
 
     println("Enter your age")
-    val userAge = readLine()
+    val userAge = readLine()?.toInt()
     if(userAge !=null)
-        if(userAge.toInt()<18)
+        if(userAge<18)
             println("You are not yet adult")
-        else if(userAge.toInt()>18 && userAge.toInt()<61)
+        else if(userAge>18 && userAge<61)
             println("You are an adult")
         else
             println("You are really too old, please take care")
+
+
 
 
 
