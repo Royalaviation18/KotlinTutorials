@@ -31,9 +31,7 @@ fun main() {
         myNumber--
     }
 
-
-
-
+    
 
     println("Enter number 1:")
     val firstNumber = readLine()?.toInt()
