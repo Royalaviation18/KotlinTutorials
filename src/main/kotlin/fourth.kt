@@ -20,26 +20,29 @@ fun main(){
     mList.removeAt(0)
     println(mList)
     println("-----")
-    println("Enter 10 elements:")
+    println("Enter 5 elements:")
     val sList = mutableListOf<Int>()
     for(i in 1..5){
         val x = readLine()?.toInt()
         if(x != null)
             sList.add(x)
     }
-    for(i in sList.reversed())
+    println("The 5 numbers in reverse order are:")
+    for(i in sList.size  downTo 1){
         println(i)
+    }
+//    for(i in sList.reversed())
+//        println(i)
 
     println("Enter a number n>1:")
     val num = readLine()?.toInt()
-    var next = 0
-    var next2 = 1
-    val tList = mutableListOf<Int>()
-    if(num != null)
-        tList.add(next)
-        tList.add(next2)
-       //complete tomorrow
-
+    val tList = mutableListOf(0,1)
+    if(num !=null){
+        for(i in 2..num-1){
+            tList.add(tList[i-2]+tList[i-1])
+        }
+    }
+    println(tList)
 
 
 }
