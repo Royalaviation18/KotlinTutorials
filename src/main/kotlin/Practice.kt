@@ -14,3 +14,5 @@ fun indexOf(list: List<Int>,number: Int):Int{
     }
     return -1
 }
+
+
