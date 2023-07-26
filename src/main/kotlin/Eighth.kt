@@ -14,11 +14,8 @@ fun main(){
     }
 
     val nList = listOf(1,2,3,4,5,6)
-//    nList.theMultiply()
-
-
+    println("The product of $nList is ${nList.product()}")
 }
-
 
 //this type of function is called as extension function
 //fun then the type of variable (Int as per line number 3), also we
@@ -35,9 +32,10 @@ fun Int.isPrime(): Boolean{
     return true
 }
 
-//fun Int.theMultiply(): Int{
-//    var product = this[0]
-//    for (i in this){
-//        product *= i
-//    }
-//}
+fun List<Int>.product():Int{
+    var result = 1
+    for (value in this){
+        result *= value
+    }
+    return result
+}
