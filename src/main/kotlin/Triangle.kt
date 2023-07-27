@@ -2,9 +2,9 @@ class Triangle(
     val a: Double,
     val b: Double,
     val c: Double
-){
+) : Shape("Triangle") {
     init {
-        println("Triangle created a = $a, b = $b , and c = $c")
+        println("$name created a = $a, b = $b , and c = $c")
         println("Area of the triangle ${area()}")
         println("Perimeter of the triangle ${perimeter()}")
     }
