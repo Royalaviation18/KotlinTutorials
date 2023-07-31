@@ -1,11 +1,11 @@
 class Circle (
     val radius: Double
-){
+): Shape("Circle"){
     val pi = 3.141592
     init {
-        println("The circle created with radius = $radius")
-        println("Circle area is ${area()}")
-        println("Circle perimeter is ${perimeter()}")
+        println("The $name created with radius = $radius")
+        println("$name area is ${area()}")
+        println("$name perimeter is ${perimeter()}")
     }
 
     fun area() = radius * radius * pi
